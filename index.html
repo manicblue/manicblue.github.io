@@ -1,0 +1,1039 @@
+<html>
+<head>
+	<title>Manic Blue</title>
+	<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		#mc_embed_signup{background:#000000aa; clear:left; font:14px Helvetica,Arial,sans-serif; color: rgb(234, 234, 234)}
+		/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+		   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+		   #mce-EMAIL {
+		   width: 95% !important;
+		   }
+		   #mc-embedded-subscribe {
+		   width:  95% !important;
+		   }
+		   #songkickWidget, .listings-height, .songkick-widget {
+		   background-color: #000000aa !important;
+		   }
+	</style>
+	<script src="jquery-1.8.1.js" type="text/javascript"></script>
+	<script  type="text/javascript">
+	//classy sly menu for all inks
+		"use strict";
+		function preloadImage(url) {
+			var img1=new Image();
+			img.src="./landscape/mb (0).JPG";
+			var img2=new Image();
+			img.src="./portrait/mb (1).JPG";
+		}
+
+		//SET QUANTITY OF PHOTOS HERE
+		var landscapePhotos = 12;
+		var portraitPhotos = 24;
+		var photos;
+		var landscapePhotosArray = new Array();
+		var portraitPhotosArray = new Array();
+		
+		for (var i=0; i<(landscapePhotos); i++) {
+			landscapePhotosArray[i] = i;
+		}
+		for (var i=0; i<(portraitPhotos); i++) {
+			portraitPhotosArray[i] = i;
+		}
+		function shuffle(array) {
+		  var currentIndex = array.length, temporaryValue, randomIndex;
+
+		  // While there remain elements to shuffle...
+		  while (0 !== currentIndex) {
+
+			// Pick a remaining element...
+			randomIndex = Math.floor(Math.random() * currentIndex);
+			currentIndex -= 1;
+
+			// And swap it with the current element.
+			temporaryValue = array[currentIndex];
+			array[currentIndex] = array[randomIndex];
+			array[randomIndex] = temporaryValue;
+		  }
+
+		  return array;
+		}
+
+		shuffle(landscapePhotosArray);
+		shuffle(portraitPhotosArray);
+
+		
+		$(document).ready(function () {
+			window.onload = function () {
+				if (window.matchMedia("(orientation: portrait)").matches) {
+				   // you're in PORTRAIT mode
+				   //alert('portrait');
+				   $("#landscapeImages").css({
+						"display": "none"});
+				   $("#portraitImages").css({
+						"display": "block"});
+					$("#mc_embed_signup").css({
+						"display": "none"});
+					$("#menu").css({
+						"display": "none"});
+					$("#navHoverIndicator").css({
+						"display": "none"});
+					$("#songkickWidget").css({
+						"display": "none"});
+					$("#mobilePage").css({
+						"display": "block"});
+					$("#layers").css({
+						"display": "none"});
+					/*$("#mailchimpPopup").css({
+						"display": "none"});
+					$("#PopupSignupForm_0").css({
+						"display": "none"});*/
+					$("body").css({
+						"overflow-y": "scroll",
+						"overflow-x": "hidden"});
+				}
+
+				if (window.matchMedia("(orientation: landscape)").matches) {
+				   // you're in LANDSCAPE mode
+				   //alert('landscape');
+				   $("#landscapeImages").css({
+						"display": "block"});
+				   $("#portraitImages").css({
+						"display": "none"});
+					$("#mobilePage").css({
+						"display": "none"});
+					$("#mc_embed_signup").css({
+						"display": "block"});
+					/*$("#mailchimpPopup").css({
+						"display": "block"});
+					$("#PopupSignupForm_0").css({
+						"display": "block"});*/
+					$("#menu").css({
+						"display": "block"});
+					$("#layers").css({
+						"display": "block"});
+					$("#navHoverIndicator").css({
+						"display": "block"});
+					$("#songkickWidget").css({
+						"display": "block"});
+					$("body").css({
+						"overflow-y": "hidden",
+						"overflow-x": "hidden"});
+				}
+				
+				if (navigator.userAgent.match(/Android/i) 
+					|| navigator.userAgent.match(/webOS/i) 
+					|| navigator.userAgent.match(/iPhone/i)  
+					|| navigator.userAgent.match(/iPad/i)  
+					|| navigator.userAgent.match(/iPod/i) 
+					|| navigator.userAgent.match(/BlackBerry/i) 
+					|| navigator.userAgent.match(/Windows Phone/i)) { 
+				   $("#landscapeImages").css({
+						"display": "none"});
+				   $("#portraitImages").css({
+						"display": "block"});
+					$("#mc_embed_signup").css({
+						"display": "none"});
+					/*$("#mailchimpPopup").css({
+						"display": "none"});
+					$("#PopupSignupForm_0").css({
+						"display": "none"});*/
+					$("#menu").css({
+						"display": "none"});
+					$("#navHoverIndicator").css({
+						"display": "none"});
+					$("#songkickWidget").css({
+						"display": "none"});
+					$("#mobilePage").css({
+						"display": "block"});
+					$("#layers").css({
+						"display": "none"});
+					$("body").css({
+						"overflow-y": "scroll",
+						"overflow-x": "hidden"});
+				} else {  
+				} 
+			};
+		
+			window.onresize = function() { 
+				if (window.matchMedia("(orientation: portrait)").matches) {
+				   // you're in PORTRAIT mode
+				   //alert('portrait');
+				   $("#landscapeImages").css({
+						"display": "none"});
+				   $("#portraitImages").css({
+						"display": "block"});
+					$("#mc_embed_signup").css({
+						"display": "none"});
+					/*$("#mailchimpPopup").css({
+						"display": "none"});
+					$("#PopupSignupForm_0").css({
+						"display": "block"});*/
+					$("#menu").css({
+						"display": "none"});
+					$("#navHoverIndicator").css({
+						"display": "none"});
+					$("#songkickWidget").css({
+						"display": "none"});
+					$("#mobilePage").css({
+						"display": "block"});
+					$("#layers").css({
+						"display": "none"});
+					$("body").css({
+						"overflow-y": "scroll",
+						"overflow-x": "hidden"});
+					/*$("#PopupSignupForm_0").css({
+						"display": "none"});*/
+				}
+
+				if (window.matchMedia("(orientation: landscape)").matches) {
+				   // you're in LANDSCAPE mode
+				   //alert('landscape');
+				   $("#landscapeImages").css({
+						"display": "block"});
+				   $("#portraitImages").css({
+						"display": "none"});
+					$("#mobilePage").css({
+						"display": "none"});
+					$("#mc_embed_signup").css({
+						"display": "block"});
+					/*$("#mailchimpPopup").css({
+						"display": "block"});*/
+					$("#menu").css({
+						"display": "block"});
+					$("#navHoverIndicator").css({
+						"display": "block"});
+					$("#songkickWidget").css({
+						"display": "block"});
+					$("body").css({
+						"overflow-y": "hidden",
+						"overflow-x": "hidden"});
+				}
+				
+				if (navigator.userAgent.match(/Android/i) 
+					|| navigator.userAgent.match(/webOS/i) 
+					|| navigator.userAgent.match(/iPhone/i)  
+					|| navigator.userAgent.match(/iPad/i)  
+					|| navigator.userAgent.match(/iPod/i) 
+					|| navigator.userAgent.match(/BlackBerry/i) 
+					|| navigator.userAgent.match(/Windows Phone/i)) { 
+				   $("#landscapeImages").css({
+						"display": "none"});
+				   $("#portraitImages").css({
+						"display": "block"});
+					/*$("#mailchimpPopup").css({
+						"display": "none"});*/
+					$("#mc_embed_signup").css({
+						"display": "none"});
+					$("#menu").css({
+						"display": "none"});
+					$("#navHoverIndicator").css({
+						"display": "none"});
+					$("#songkickWidget").css({
+						"display": "none"});
+					$("#mobilePage").css({
+						"display": "block"});
+					$("#monogramlogo").css({
+						"opacity": "0.7"});
+					$("#layers").css({
+						"display": "none"});
+					$("body").css({
+						"overflow-y": "scroll",
+						"overflow-x": "hidden"});
+					/*$("#PopupSignupForm_0").css({
+						"display": "none"});*/
+				} else {  
+				} 
+			};
+			
+			
+			
+			
+			/*for (var i=0; i<(landscapePhotos); i++) {
+				$("#landscapeImages").append("<img id='landscapeImg0" + i + "' src='./landscape/mb (" + landscapePhotosArray[i] + ").JPG' alt='Manic Blue' class='image' />");
+			}
+			for (var i=0; i<(portraitPhotos); i++) {
+				$("#portraitImages").append("<img id='portraitImg0" + i + "' src='./portrait/mb (" + portraitPhotosArray[i] + ").JPG' alt='Manic Blue' class='image' />");
+			}*/
+			var currentLandscapeImageLoad = 0;
+			var lsInt = setInterval ( function() {
+				$("#landscapeImages").append("<img id='landscapeImg0" + (currentLandscapeImageLoad+1) + "' src='./landscape/mb (" + landscapePhotosArray[currentLandscapeImageLoad] + ").JPG' alt='Manic Blue' class='image' />");
+				currentLandscapeImageLoad++;
+				if (currentLandscapeImageLoad == (landscapePhotos)) {
+					clearInterval(lsInt);
+				}
+			}, 3000);
+		
+			var currentPortraitImageLoad = 0;
+			var portraitInterval = setInterval ( function() {
+				$("#portraitImages").append("<img id='portraitImg0" + (currentPortraitImageLoad+1) + "' src='./portrait/mb (" + portraitPhotosArray[currentPortraitImageLoad] + ").JPG' alt='Manic Blue' class='image' />");
+				currentPortraitImageLoad++;
+				if (currentPortraitImageLoad == (portraitPhotos)) {
+					clearInterval(portraitInterval);
+				}
+			}, 3000);
+		
+				$("#musicsub").css({
+					"opacity": "0.0",
+					"display": "none"
+				});
+				$("#photossub").css({
+					"opacity": "0.0",
+					"display": "none"
+				});
+				$("#videossub").css({
+					"opacity": "0.0",
+					"display": "none"
+				});
+				$("#showssub").css({
+					"opacity": "0.0",
+					"display": "none"
+				});
+				$("#socialsub").css({
+					"opacity": "0.0",
+					"display": "none"
+				});
+			
+
+			//HOVER FUNCTIONS FOR NAVIGATION LINKS
+			$("#music").hover(function () {
+				var leftPos  = $(this)[0].getBoundingClientRect().left   + $(window)['scrollLeft']();
+				var topPos = $(this)[0].getBoundingClientRect().top  + $(window)['scrollTop']();
+				$(this).css("z-index", "99");
+				$("#navHoverIndicator").stop();
+				$("#navHoverIndicator").animate({
+					"left": leftPos,
+					"top": topPos,
+					"width": "100px",
+					"height": $(this).css('height'),
+				}, 400);
+				$("#musicsub").stop();
+				$("#musicsub").css({
+					"display": "inline"
+				});
+				$("#musicsub").animate({
+					"opacity": "1.0"
+				}, 400);
+					
+			}, function() {
+				$(this).css("z-index", "1");
+				$("#navHoverIndicator").stop();
+				$("#navHoverIndicator").animate({
+					"left": '50%',
+					"top": '50%',
+					"width": '0px',
+					"height": '0px',
+				}, 400);
+				$("#musicsub").stop();
+				$("#musicsub").animate({
+					"opacity": "0.0"
+				}, 400, function () {
+					$("#musicsub").css("display", "none")
+				});
+			});
+
+			$("#photos").hover(function () {
+				var leftPos  = $(this)[0].getBoundingClientRect().left   + $(window)['scrollLeft']();
+				var topPos = $(this)[0].getBoundingClientRect().top  + $(window)['scrollTop']();
+				$(this).css("z-index", "99");
+				$("#navHoverIndicator").stop();
+				$("#navHoverIndicator").animate({
+					"left": leftPos,
+					"top": topPos,
+					"width": "110px",
+					"height": $(this).css('height'),
+				}, 400);
+				$("#photossub").stop();
+				$("#photossub").css({
+					"display": "inline"
+				});
+				$("#photossub").animate({
+					"opacity": "1.0"
+				}, 400);
+					
+			}, function() {
+				$(this).css("z-index", "1");
+				$("#navHoverIndicator").stop();
+				$("#navHoverIndicator").animate({
+					"left": '50%',
+					"top": '50%',
+					"width": '0px',
+					"height": '0px',
+				}, 400);
+				$("#photossub").stop();
+				$("#photossub").animate({
+					"opacity": "0.0"
+				}, 400, function () {
+					$("#photossub").css("display", "none")
+				});
+			});
+
+			$("#videos").hover(function () {
+				var leftPos  = $(this)[0].getBoundingClientRect().left   + $(window)['scrollLeft']();
+				var topPos = $(this)[0].getBoundingClientRect().top  + $(window)['scrollTop']();
+				$(this).css("z-index", "99");
+				$("#navHoverIndicator").stop();
+				$("#navHoverIndicator").animate({
+					"left": leftPos,
+					"top": topPos,
+					"width": "110px",
+					"height": $(this).css('height'),
+				}, 400);
+				$("#videossub").stop();
+				$("#videossub").css({
+					"display": "inline"
+				});
+				$("#videossub").animate({
+					"opacity": "1.0"
+				}, 400);
+					
+			}, function() {
+				$(this).css("z-index", "1");
+				$("#navHoverIndicator").stop();
+				$("#navHoverIndicator").animate({
+					//"left": '100%',
+					"top": '50%',
+					"width": '0px',
+					"height": '0px',
+				}, 400);
+				$("#videossub").stop();
+				$("#videossub").animate({
+					"opacity": "0.0"
+				}, 400, function () {
+					$("#videossub").css("display", "none")
+				});
+			});
+
+			$("#shows").hover(function () {
+				var leftPos  = $(this)[0].getBoundingClientRect().left   + $(window)['scrollLeft']();
+				var topPos = $(this)[0].getBoundingClientRect().top  + $(window)['scrollTop']();
+				$(this).css("z-index", "99");
+				$("#navHoverIndicator").stop();
+				$("#navHoverIndicator").animate({
+					"left": leftPos,
+					"top": topPos,
+					"width": "110px",
+					"height": $(this).css('height'),
+				}, 400);
+				$("#showssub").stop();
+				$("#showssub").css({
+					"display": "inline"
+				});
+				$("#showssub").animate({
+					"opacity": "1.0"
+				}, 400);
+					
+			}, function() {
+				$(this).css("z-index", "1");
+				$("#navHoverIndicator").stop();
+				$("#navHoverIndicator").animate({
+					"left": '50%',
+					"top": '50%',
+					"width": '0px',
+					"height": '0px',
+				}, 400);
+				$("#showssub").stop();
+				$("#showssub").animate({
+					"opacity": "0.0"
+				}, 400, function () {
+					$("#showssub").css("display", "none")
+				});
+			});
+
+			$("#social").hover(function () {
+				var leftPos  = $(this)[0].getBoundingClientRect().left   + $(window)['scrollLeft']();
+				var topPos = $(this)[0].getBoundingClientRect().top  + $(window)['scrollTop']();
+				$(this).css("z-index", "99");
+				$("#navHoverIndicator").stop();
+				$("#navHoverIndicator").animate({
+					"left": leftPos,
+					"top": topPos,
+					"width": "120px",
+					"height": $(this).css('height'),
+				}, 400);
+				$("#socialsub").stop();
+				$("#socialsub").css({
+					"display": "inline"
+				});
+				$("#socialsub").animate({
+					"opacity": "1.0"
+				}, 400);
+					
+			}, function() {
+				$(this).css("z-index", "1");
+				$("#navHoverIndicator").stop();
+				$("#navHoverIndicator").animate({
+					"left": '50%',
+					"top": '50%',
+					"width": '0px',
+					"height": '0px',
+				}, 400);
+				$("#socialsub").stop();
+				$("#socialsub").animate({
+					"opacity": "0.0"
+				}, 400, function () {
+					$("#socialsub").css("display", "none")
+				});
+			});
+			
+			
+			
+			$("#menu").hover(function () {
+				$("#menuBG").animate({
+					"left": "0%"
+				}, 200);
+				/*$("#logo").animate({
+					"opacity": "0.7"}, 200);*/
+				$("#monogramlogo").animate({
+					"opacity": "0.3"}, 200);
+				
+					
+			}, function() {
+				$("#menuBG").animate({
+					"left": "100%"
+				}, 200);
+				/*$("#logo").animate({
+					"opacity": "0.0"}, 500);*/
+				$("#monogramlogo").animate({
+					"opacity": "0.1"}, 500);
+				
+					
+			});
+			//background image rotate
+			var landscapecurrentphoto=2;
+			var landscapepreviousphoto=1;
+			var portraitcurrentphoto=2;
+			var portraitpreviousphoto=1;
+			var fadeSpeed = 550;
+	
+			function imagerotate() {
+					//alert("p=" + portraitcurrentphoto + "--L=" + landscapecurrentphoto);
+				$("#landscapeImg0" + landscapecurrentphoto).animate({
+				"opacity": "1.0"}, fadeSpeed);
+				$("#landscapeImg0" + landscapepreviousphoto).animate({
+						"opacity": "0.0"}, fadeSpeed);
+
+				if (landscapecurrentphoto < landscapePhotos) {
+					landscapecurrentphoto++;
+					if (landscapepreviousphoto == landscapePhotos) {
+						landscapepreviousphoto=1; 	
+					} else {
+						landscapepreviousphoto++;
+					}
+				} else {
+					landscapecurrentphoto=1;
+					landscapepreviousphoto=landscapePhotos;	
+				}
+				
+				$("#portraitImg0" + portraitcurrentphoto).animate({
+				"opacity": "1.0"}, fadeSpeed);
+				$("#portraitImg0" + portraitpreviousphoto).animate({
+						"opacity": "0.0"}, fadeSpeed);
+
+				if (portraitcurrentphoto < portraitPhotos) {
+					portraitcurrentphoto++;
+					if (portraitpreviousphoto == portraitPhotos) {
+						portraitpreviousphoto=1; 	
+					} else {
+						portraitpreviousphoto++;
+					}
+				} else {
+					portraitcurrentphoto=1;
+					portraitpreviousphoto=portraitPhotos;	
+				}
+
+				setTimeout(function() {
+					imagerotate();
+				}, 7000);
+			}
+			//setTimeout(function() {
+				imagerotate();
+			//}, 4000);
+			
+			$("#logo").animate({
+				"opacity": "0.0"}, 100);
+			
+			$("#monogramlogo").animate({
+				"opacity": "0.0"}, 1);
+			
+			setTimeout(function() {
+				$("#graylayer").animate({
+						"opacity": "0.0"}, 1500);
+				
+				setTimeout (function() {
+				
+					$("#bluelayer").animate({
+						"opacity": "0.0"}, 1500);
+					$("#logolayer").animate({
+						"opacity": "0.7"}, 1500);
+					
+					setTimeout (function() {
+						$("#logolayer").animate({
+							"opacity": "0.0"}, 1500);
+						
+						setTimeout (function() {
+							$(".fadelayer").css({
+								"display": "none"
+							});
+							$("#monogramlogo").animate({
+								"opacity": "0.1"}, 1500);
+			
+							/*$("#logo").animate({
+								"opacity": "0.7"}, 2000);*/
+							
+						}, 1050);
+						
+					}, 1250);
+
+					
+				}, 1250);
+			
+				
+			}, 1500);
+			
+		});
+
+	//display bio
+	</script>
+	<style type="text/css">
+		html {
+			overflow: hidden;
+			width: 100vw;
+			height: 100vh;
+		}
+		body {
+			padding: 0 0 0 0;
+			margin: 0 0 0 0;
+			font-family: arial, tahoma, verdana, sans-serif;
+			background-color: #262626;
+			overflow: hidden;
+			width: 100vw;
+			height: 100vh;
+		}
+		#navHoverIndicator {
+			width: 0px;
+			height: 0px;
+			position: absolute;
+			top: 40%;
+			left: 50%;
+			z-index: 0;
+			opacity: 0.35;
+		}
+			
+		#menu {
+			margin: 50px 0px 0px 0px;
+			text-align: right;
+			position: relative;
+			padding: 0px 0px 0px 0px;
+			width: 100%;
+			height: 75px;
+			z-index: 2;
+		}
+		#menuBG {
+			position: absolute;
+			top: 0px;
+			left: 100%;
+			background-color: rgba(32,78,114,0.7);
+			height: 100%;
+			width: 100%;
+		}
+		#logo {
+			position: absolute;
+			top: -40px;
+			left: 40px;
+
+		}
+		#monogramlogo {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 0;
+			width: 100%;
+			height: 100%;
+			display: block;
+			background-image: url('./logo2.png');
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: contain;
+
+		}
+		#textlogo {
+			position: absolute;
+			top: 0px;
+			left: 2%;
+			height: 75px;
+			
+		}
+		#navlinks {
+			display: inline;
+			margin-right: 40px;
+		}
+		.navlink {
+			display: inline-block;
+			font-size: 14px;
+			color: #e5e5e5;
+			letter-spacing: 1px;
+			text-decoration: none;
+			display: inline-block;
+			position: relative;
+			cursor: pointer;
+			line-height: 90px;
+			margin: 0;
+			padding: 0 25px;
+			text-transform: uppercase;
+			font-weight: 400;
+			font-family: "Oswald", sans-serif;
+			top: -10%;
+			text-shadow: 2px 2px rgba(32,78,114,0.7);
+		}
+		.navlink:link {
+			color: #cccccc;
+		}
+		.navlink:visited {
+			color: #cccccc;
+		}
+		.navlink:active {
+			color: #ffffff;
+		}
+		.navlink:hover {
+			color: #ffffff;
+		}
+		
+		.subMenu {
+			display: none;
+			position: absolute;
+			top: 82px;
+			right: 0%;
+			width: 200px;
+			text-align: left;
+			background-color: rgba(32,78,114,0.2);
+			padding: 20px 20px 10px 20px;
+		}
+		.sublinks {
+			height: 52px;
+			width: 100%;
+			display: inline-block;
+			margin: 10px 0px 10px 0px;
+			padding: 0px 0px 0px 65px;
+			line-height: 1.5;
+			vertical-align: middle;
+			position: relative;
+		}
+		#spotify, #applemusic, #googleplay, #amazonmusic {
+			line-height: 52px !important;
+		}
+		.sublinks:link {
+			text-decoration: none;
+			color: rgba(256,256,256,0.9);
+		}
+		.sublinks:visited {
+			text-decoration: none;
+			color: rgba(256,256,256,0.9);
+		}
+		.sublinks:active {
+			text-decoration: none;
+			color: rgba(32,78,114,0.9);
+		}
+		.sublinks:hover {
+			text-decoration: none;
+			color: rgba(32,78,114,0.9);
+		}
+		.sublinks img {
+			width: 50px;
+			margin-bottom: 20px;
+			position: absolute; 
+			top: 0px;
+			left: 0px;
+		}
+		#imagerotator {
+			width: calc(100%);
+			height: calc(100%);
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: -20;
+			overflow: hidden;
+		}
+		.image {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			opacity: 0.0;
+			image-orientation: from-image;
+		}
+		
+		#layers {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 1000;
+			width: 100%;
+			height: 100%;
+		}
+		#bluelayer {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 1001;
+			width: 100%;
+			height: 100%;
+			display: block;
+			background-color: rgba(32,78,114,1.0);
+		}
+		#graylayer {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 1003;
+			width: 100%;
+			height: 100%;
+			display: block;
+			background-color: rgba(44,44,44,0.7);;
+		}
+		#logolayer {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 1002;
+			width: 100%;
+			height: 100%;
+			display: block;
+			background-image: url('./logo2.png');
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+		#textlogo {
+		}
+		#mc_embed_signup {
+			width: 25%;
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+		}
+		.songkick-widget, .listings-height, #songkickWidget {
+			width: 25%;
+			position: absolute;
+			bottom: 0px;
+			right: 0px;
+		}
+		
+		/**************************/
+		#mobilePage {
+			position: relative;
+			padding-bottom: 50px;
+		}
+		#mobileTop {
+			position: relative;
+		}
+		#mobileLogo {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			text-align: center;
+			width: 100vw;
+			padding: 10px 10px 10px 10px;
+			z-index: 10000;
+		}
+		#mobileLogo img {
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		#mobileLogoSpacer {
+			top: 0px;
+			left: 0px;
+			text-align: center;
+			width: 100vw;
+			padding: 10px 10px 10px 10px;
+			z-index: 10000;
+			opacity: 0.0;
+		}
+		#mobileLogoSpacer img {
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		#mobileLogoBG {
+			position: absolute;
+			z-index: 9999;
+			top: 0px;
+			left: 0px;
+			background-color: #000000;
+			opacity: 0.6;
+			height: 100%;
+			width: 100%;
+		}
+		#mobileLinks {
+			padding-top: 20px;
+		}
+		.mobileLink {
+			width: 100%;
+			display: block;
+			margin: 20px auto 10px auto;
+			vertical-align: middle;
+			position: relative;
+			text-decoration: none;
+			color: rgba(256,256,256,0.9);
+			font-size: 40px;
+			letter-spacing: 3px;
+			cursor: pointer;
+			line-height: 50px;
+			text-transform: uppercase;
+			font-weight: 400;
+			font-family: "Oswald", sans-serif;
+			top: -10%;
+			text-shadow: 4px 4px rgba(32,78,114,0.7);
+			width: 60%;
+			border-radius: 15px;
+			padding: 25px 10px 25px 10px;
+			overflow: hidden;
+
+		}
+		.mobileLink img {
+			width: 50px;
+			vertical-align: middle;
+			margin-right: 30px;
+			margin-left: 10%;
+		}
+		.mobileLinkBG {
+			display: block;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: -1;
+			background-color: #000000;
+			opacity: 0.6;
+			width: 100%;
+			height: 100%;
+		}
+		#landscapeImages {
+			background-image: url('./landscape/mb (0).JPG');
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: 100% auto;
+			height: 100vh;
+			width: 100vw;
+		}
+		#portraitImages {
+			background-image: url('./portrait/mb (1).JPG');
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: auto 100%;
+			height: 100vh;
+			width: 100vw;
+		}
+		#layers, #menu, #navHoverIndicator, #songkickWidget, #mc_embed_signup, #mailchimpPopup, #mobilePage, #PopupSignupForm_0 {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div id="layers" class="fadelayer">
+		<div id="bluelayer" class="fadelayer"></div>
+		<div id="logolayer" class="fadelayer"></div>
+		<div id="graylayer" class="fadelayer"></div>
+	</div>
+	<div id="menu">
+		<div id="menuBG"></div>
+		<img id="logo" alt="Manic Blue" src="./logo2.png" />
+		<img id="textlogo" alt="Manic Blue" src="./text90.png" />
+		<div id="navlinks">
+			<div class="navlink" id="music" href="">Music
+				<div class="subMenu" id="musicsub" style="display: none;">
+					<a class="sublinks" id="spotify" href="https://open.spotify.com/artist/3OG8U590cPVQRZpCZiN9wK" target="_blank"><img src="./spotify.png" alt="Spotify" />Spotify</a><br />
+					<a class="sublinks" id="applemusic" href="https://itunes.apple.com/us/artist/manic-blue/1392101698" target="_blank"><img src="./applemusic.png" alt="Apple Music" />Apple Music</a><br />
+					<a class="sublinks" id="googleplay" href="https://play.google.com/store/music/artist/Manic_Blue?id=Ajnpakecxa6jngyzoeo7pxt7lzu" target="_blank"><img src="./googleplay.png" alt="Google Play Music" />Google Play</a><br />
+					<a class="sublinks" id="amazonmusic" href="https://www.amazon.com/Bloodbath/dp/B07DH972L4/ref=sr_1_22?s=dmusic&ie=UTF8&qid=1548707739&sr=1-22&keywords=Manic+Blue" target="_blank"><img src="./amazonmusic.png" alt="Amazon Music" />Amazon Music</a><br />
+				</div>
+			</div>
+			<div class="navlink" id="photos" href="">Photos
+				<div class="subMenu" id="photossub">
+					<a class="sublinks" id="instagram" href="https://www.instagram.com/manicblueband/" target="_blank"><img src="./instagram.png" alt="Instagram" />Photos //<br />INSTAGRAM</a>
+				</div>
+			</div>
+			<div class="navlink" id="videos" href="">Videos
+				<div class="subMenu" id="videossub">
+					<a class="sublinks" id="youtube" href="https://www.youtube.com/channel/UCqAftBmvhrGJUr6LDAj7ntw" target="_blank"><img src="./youtube.png" alt="YouTube" />Videos //<br />YOUTUBE</a>
+				</div>
+			</div>
+			<div class="navlink" id="shows" href="">Shows
+				<div class="subMenu" id="showssub">
+					<a class="sublinks" id="songkick" href="http://www.songkick.com/artists/10109214" target="_blank"><img src="./songkick.png" alt="SongKick" />Shows //<br />SONGKICK</a>
+					<!--<a class="sublinks" id="bandsintown" href="https://bnds.us/ge7h1h" target="_blank"><img src="./bandsintown.png" alt="Bands in Town" />Shows //<br />BANDSINTOWN</a>-->
+				</div>
+			</div>
+			<div class="navlink" id="social" href="">Social
+				<div class="subMenu" id="socialsub">
+					<a class="sublinks" id="socialmedia" href="https://www.facebook.com/manicblueny/" target="_blank"><img src="./facebook.png" alt="Facebook" />Facebook<br />sucks</a>
+					<a class="sublinks" id="twitter" href="https://twitter.com/manic_blue" target="_blank"><img src="./twitter.png" alt="Twitter" />Twitter<br />also sucks</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<img id="navHoverIndicator" src="navHoverIndicator.png" alt=" " />
+	<div id="monogramlogo"></div>
+	<div id="imagerotator">
+		<div id="portraitImages">
+		</div>
+		<div id="landscapeImages">
+		</div>
+	</div>
+
+	<div id="songkickWidget">
+		<a href="https://www.songkick.com/artists/10109214" class="songkick-widget" data-theme="dark" data-track-button="on" data-detect-style="true" data-font-color="#eaeaea" data-background-color="#000000aa" data-locale="en">Manic Blue tour dates</a>
+		<script src="//widget.songkick.com/10109214/widget.js"></script>
+	</div>
+
+<!-- Begin Mailchimp Signup Form -->
+	<div id="mc_embed_signup">
+		<form action="https://manicblueband.us4.list-manage.com/subscribe/post?u=7d7aed5d80d95cadeca47ec60&amp;id=6bd25257e0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+			<div id="mc_embed_signup_scroll">
+			<label for="mce-EMAIL">Subscribe to our Mailing List</label>
+			<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+			<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+			<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7d7aed5d80d95cadeca47ec60_6bd25257e0" tabindex="-1" value=""></div>
+			<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+			</div>
+		</form>
+	</div>
+<!--End mc_embed_signup-->
+	<!--<div id="mailchimpPopup">
+		<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us4.list-manage.com","uuid":"7d7aed5d80d95cadeca47ec60","lid":"6bd25257e0","uniqueMethods":true}) })</script>
+	</div>-->
+
+	<div id="mobilePage">
+	<div id="mobileTop">
+		<div id="mobileLogo">
+			<img alt="Manic Blue" src="./text100.png" />
+		</div>
+		<div id="mobileLogoSpacer">
+			<img alt="Manic Blue" src="./text100.png" />
+		</div>
+		<div id="mobileLogoBG"></div>
+	</div>
+	<div id="mobileLinks">
+		<a href="http://manicblueband.com/url/spotify" class="mobileLink" id="mobileSpotify"><img src="spotify.png" alt="Spotify" />Spotify<span class="mobileLinkBG"></span></a>
+		<a href="http://manicblueband.com/url/youtube" class="mobileLink" id="mobileYoutube"><img src="youtube.png" alt="YouTube" />YouTube<span class="mobileLinkBG"></span></a>
+		<a href="http://manicblueband.com/url/apple" class="mobileLink" id="mobileAppleMusic"><img src="applemusic.png" alt="Apple Music" />Apple Music<span class="mobileLinkBG"></span></a>
+		<a href="http://manicblueband.com/url/merch" class="mobileLink" id="mobileTeepublic"><img src="teepublic.png" alt="Merch" />Merch!<span class="mobileLinkBG"></span></a>
+		<a href="http://manicblueband.com/url/instagram" class="mobileLink" id="mobileInstagram"><img src="instagram.png" alt="Instagram" />Instagram<span class="mobileLinkBG"></span></a>
+		<a href="http://manicblueband.com/url/tiktok" class="mobileLink" id="mobileTikTok"><img src="tiktok.png" alt="TikTok" />TikTok<span class="mobileLinkBG"></span></a>
+		<a href="http://manicblueband.com/url/facebook" class="mobileLink" id="mobileFacebook"><img src="facebook.png" alt="Facebook" />Facebook<span class="mobileLinkBG"></span></a>
+		<a href="http://manicblueband.com/url/list" class="mobileLink" id="mobileMailchimp"><img src="mailchimp.png" alt="Mailing List" />Mailing List<span class="mobileLinkBG"></span></a>
+		<a href="http://manicblueband.com/url/twitter" class="mobileLink" id="mobileTwitter"><img src="twitter.png" alt="Twitter" />Twitter<span class="mobileLinkBG"></span></a>
+		<a href="http://manicblueband.com/url/google" class="mobileLink" id="mobileGooglePlay"><img src="googleplay.png" alt="Google Play" />Google Play<span class="mobileLinkBG"></span></a>
+		<a href="http://manicblueband.com/url/amazon" class="mobileLink" id="mobileAmazonMusic"><img src="amazonmusic.png" alt="Amazon Music" />Amazon Music<span class="mobileLinkBG"></span></a>
+		<a href="http://manicblueband.com/url/songkick" class="mobileLink" id="mobileSongkick"><img src="songkick.png" alt="Shows" />Shows<span class="mobileLinkBG"></span></a>
+		<a href="http://manicblueband.com/url/soundcloud" class="mobileLink" id="mobileSoundcloud"><img src="soundcloud.png" alt="SoundCloud" />SoundCloud<span class="mobileLinkBG"></span></a>
+	</div>
+</div>
+
+
+</body>
+</html>
